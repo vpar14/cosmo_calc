@@ -19,7 +19,7 @@ class Cos_Para(object):
         return 299792.458/self.H
 
     def integ(self):
-        return lambda z:(np.sqrt(self.O_M*(1.0+self.z)**3+self.O_K*(1.0+self.z)**2+self.O_L))**-1
+        return lambda z:(np.sqrt(self.O_M*(1.0+z)**3+self.O_K*(1.0+z)**2+self.O_L))**-1
 
     def D_C(self):
         #COMOVING DISTANCE (Mpc) (Credit: Hogg 2000 Eq15)
